@@ -1,0 +1,338 @@
+*{
+    box-sizing:border-box;
+  }
+  body{
+    margin:0;
+    padding:0;
+    padding: 20px;
+    background-color:white;
+  
+  }
+  .aboutnavbar {
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    background-color: #333;
+    color: white;
+  }
+  
+  .brand-title{
+  font-size:1.5rem;
+  margin:.5rem;
+  text-decoration: none;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  }
+  
+  
+  .aboutnavbar-links ul{
+    margin:0;
+    padding:0;
+    display:flex;
+  }
+  
+  .aboutnavbar-links li{
+    list-style:none;
+  }
+  
+  .aboutnavbar-links li a {
+    color: #fff;
+    text-decoration: none;
+    padding:1rem;
+    display:block;
+    font-family:Arial, Helvetica, sans-serif;
+  }
+  
+  .aboutnavbar-links li:hover {
+   background-color:#555;
+ 
+  }
+
+
+  /*added*/
+  .aboutnavbar-links ul li ul.dropdown li{
+    display:block;
+    background:#262626;
+    border:1px solid #fff;
+    color:#fff;  
+    /*position:relative;*/
+  
+  }
+
+  .aboutnavbar-links ul li ul.dropdown{
+    z-index:999;
+    width:auto;
+    display:none;
+    position:absolute;
+    
+  }
+
+  .aboutnavbar-links ul li:hover ul.dropdown{
+    display:block;
+  }
+
+  
+  .toggle-button{
+    position:absolute;
+    top:.75rem;
+    right:1rem;
+    display:none;
+    flex-direction:column;
+    justify-content:space-between;
+    width:30px;
+    height:21px;
+  }
+  
+  .toggle-button.bar{
+    height:3px;
+    width:100%;
+    background-color:white;
+    border-radius:10px;
+  }
+
+
+
+/* Breadcrumbs home/merch */
+ul.breadcrumb {
+  padding: 10px 1.5%;
+  list-style: none;
+  font-family:arial;
+}
+
+ul.breadcrumb li {
+  display: inline;
+  font-size: 18px;
+}
+
+ul.breadcrumb li+li:before {
+  padding: 7px;
+  color: rgb(39, 2, 34);
+  content: "/\00a0";
+}
+
+ul.breadcrumb li a {
+  color: rgb(39, 2, 34);
+  text-decoration: none;
+}
+
+ul.breadcrumb li a:hover {
+  color: #4a1857;
+  text-decoration: underline;
+}
+
+/*top banner*/
+.welcome-container {
+  background-color:#f3274369;
+  color:white;
+  text-align: center;
+  padding: 80px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+.welcome-container h1 {
+  margin: 0;
+  font-size: 2.5em;
+  font-family:arial;
+}
+
+
+
+
+
+
+
+/* teens */
+.title {
+
+  font-size: 26px;
+  font-family: 'Patrick Hand', cursive;
+  margin-bottom: 8px;
+  color: white;
+}
+
+.space {
+  padding: 0px;
+}
+
+/* Image containers */
+.imagecontainer,
+.imagecontainer1 {
+  height: 200px;
+  width: 300px;
+  border-radius: 30px;
+}
+
+h2 {
+  text-align: center;
+  padding-left: 20px;
+}
+
+.imagecontainer1 {
+  width: 100%;
+  height: 575px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, .1);
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 9px;
+}
+
+.imagecontainer1 img {
+  height: 500px;  /*image height*/
+  width: 100%;
+  object-fit: cover;
+  transition: .2s linear;
+}
+
+.imagecontainer1:hover img {
+  transform: scale(1.1);
+}
+
+.imagecontainer1.popup {
+  position: fixed;
+  height: 575px;
+  top: 0;
+  left: 1;
+  background: black;
+  height: 130%;
+  width: 100%;
+  z-index: 100;
+  display: none;
+}
+
+.imagecontainer1.popup span {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  font-size: 60px;
+  font-weight: bolder;
+  color: white;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.imagecontainer1.popup img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 5px solid white;
+  border-radius: 5px;
+  width: 750px;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .imagecontainer1.popup img {
+    width: 95%;
+  }
+}
+
+/* Gallery grid */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0 auto;
+  max-width: 1000px; /* Adjust max-width as needed */
+  padding: 20px;
+}
+
+.columna {
+  flex-basis: 32%; /* Adjust the width of each column */
+  height: 575px;  /*height of black part*/
+  margin: 7px;
+  text-align: center;
+  background-color: #1a1a1a; /* Gray background */
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.columna img {
+  width: 100%;
+  border-radius: 9px; /* Rounded corners for images */
+}
+
+.column p {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #333; /* Text color */
+}
+
+.row1, .row2, .row3 {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+  justify-content: left;
+}
+
+.column1, .column2, .column3 {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+  justify-content: left;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 1200px) {
+  .columna {
+    flex-basis: 48%; /* Two columns */
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .columna {
+    flex-basis: 100%; /* One column */
+    max-width: 100%;
+  }
+}
+
+/* Responsive layout for columns */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+/* Attraction content photo popip*/
+.popup {
+  display: none; /* Hidden by default */
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+ 
+  background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+  overflow: auto; /* Enable scroll if needed */
+}
+
+.popupcontent {
+  background-color: black;
+  margin: 13% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #070606;
+  width: 85%; /* Could be more or less, depending on screen size */
+  height: 100%;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.popupcontent h2 {
+  margin-top: 0;
+}
+
+.popupcontent p {
+  margin-bottom: 0;
+}
+
+  
+
+  

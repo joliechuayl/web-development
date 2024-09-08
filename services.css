@@ -1,0 +1,601 @@
+*{
+  box-sizing:border-box;
+}
+body{
+  margin:0;
+  padding:0;
+ padding: 0px;
+  background-color:white; 
+}
+.aboutnavbar {
+  display: flex;
+  justify-content:space-between;
+  align-items:center;
+  background-color: #333;
+  color: white;
+}
+
+.brand-title{
+font-size:1.5rem;
+margin:.5rem;
+text-decoration: none;
+color: white;
+font-family: "Open Sans", Arial, Helvetica, sans-serif;
+}
+
+
+.aboutnavbar-links ul{
+  margin:0;
+  padding:0;
+  display:flex;
+}
+
+.aboutnavbar-links li{
+  list-style:none;
+}
+
+.aboutnavbar-links li a {
+  color: #fff;
+  text-decoration: none;
+  padding:1rem;
+  display:block;
+}
+
+.aboutnavbar-links li:hover {
+ background-color:#555;
+
+}
+
+
+/*added*/
+.aboutnavbar-links ul li ul.dropdown li{
+  display:block;
+  background:#262626;
+  border:1px solid #fff;
+  color:#fff;  
+  /*position:relative;*/
+
+}
+
+.aboutnavbar-links ul li ul.dropdown{
+  z-index:999;
+  width:auto;
+  display:none;
+  position:absolute;
+  
+}
+
+.aboutnavbar-links ul li:hover ul.dropdown{
+  display:block;
+}
+
+
+.toggle-button{
+  position:absolute;
+  top:.75rem;
+  right:1rem;
+  display:none;
+  flex-direction:column;
+  justify-content:space-between;
+  width:30px;
+  height:21px;
+}
+
+.toggle-button.bar{
+  height:3px;
+  width:100%;
+  background-color:white;
+  border-radius:10px;
+}
+
+
+
+/*top pink*/
+  
+.welcome-container {
+  background-color:#f3274369;;
+  color:rgb(250, 250, 250);
+  text-align: center;
+  padding: 80px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+.welcome-container h1 {
+  margin: 0;
+  font-size: 2.5em;
+  font-family:arial;
+}
+
+/* Breadcrumbs home/merch */
+ul.breadcrumb {
+    padding: 15px 0%;
+    list-style: none;
+    margin-left: 7px;
+  }
+  
+  ul.breadcrumb li {
+    display: inline;
+    font-size: 18px;
+  }
+  
+  ul.breadcrumb li+li:before {
+    padding: 7px;
+    color: rgb(39, 2, 34);
+    content: "/\00a0";
+  }
+  
+  ul.breadcrumb li a {
+    color: rgb(39, 2, 34);
+    text-decoration: none;
+  }
+  
+  ul.breadcrumb li a:hover {
+    color: #4a1857;
+    text-decoration: underline;
+  }
+
+
+
+.roomcontainer{
+    
+height:80%,auto;    
+width:100%,auto;
+object-fit: cover; /* Ensures the image covers the container without distortion */
+}
+
+
+.roompicture{
+  width:100%;
+  height:65vh;
+  background-image:url(images/counselling.jpg);
+  background-size:cover;
+  background-position:69%;
+  border-radius:10px;
+margin-bottom:20px;
+  /*margin-top:100px;*/
+}
+
+.room-text{
+  padding-top:9px;
+  margin-left:50px;
+  margin-bottom:20px;
+}
+
+.room-text h2{
+  margin-left:100px;
+  margin-top:60px;
+  font-weight:bold;
+  letter-spacing:5px;
+  font-size:17px;
+  margin-bottom:20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.room-text h1{
+  margin-left:110px;
+  margin-top:60px;
+  font-weight:lighter;
+  font-size:55px;
+  margin-bottom:20px;
+  
+}
+
+@media (max-width:700px){
+  .room-text h1{
+    font-weight:bold;
+    margin-top:40px;
+    font-size:35px;
+    margin-left:10%;
+  }
+  .room-text h2{
+    margin-left:20%;
+    margin-top:120px;
+    font-weight:bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom:10px;
+   
+  }
+}
+
+
+
+@media (max-width:100px){
+  .room-text h1{
+    font-weight:bold;
+    font-size:35px;
+    margin-left:10%;
+    margin-top:50px;
+  }
+  .room-text h2{
+    margin-left:30%;
+    margin-top:130px;
+    font-weight:bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom:10px;
+   
+  }
+}
+
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: black;
+  padding: 0px;
+  background-color: white;
+}
+
+
+
+
+/*send message*/
+/* Container styling */
+.containersend {
+  background-position:79%;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 40px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.containersend h1{
+
+  align-items: center;
+  margin-left:33%;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+@media (max-width:100px){
+  .containersend h1{
+    align-items: center;
+  margin-left:18%;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+  }
+
+@media (max-width:700px){
+  .containersend h1{
+    align-items: center;
+  margin-left:24%;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+  }
+
+
+  @media (max-width:900px){
+    .containersend h1{
+      align-items: center;
+    margin-left:26%;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+}
+
+
+
+
+  @media (max-width:750px){
+    .containersend h1{
+      align-items: center;
+    margin-left:23%;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+}
+
+
+  
+/* Form styling */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  
+  margin-bottom: 15px;
+}
+
+label {
+
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.input, .form-control {
+ 
+
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+textarea {
+
+  resize: vertical;
+}
+
+/* Button styling */
+.btn {
+  background-color:#333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  
+}
+
+.btn:hover {
+  background-color: #555;
+}
+
+
+
+.phone{
+  margin-top:10%;
+  margin-left:25%;
+  letter-spacing:5px;
+  font-size:15px;
+}
+
+.number{
+  margin-top:1%;
+  margin-left:25%;
+ font-size:40px;
+ font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.callnow{
+  margin-top:2%;
+  margin-left:30%;
+ font-size:25px;
+ width:19%;
+ letter-spacing:5px;
+ background-color:white;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  
+
+}
+
+
+.callnow:hover{
+  margin-top:2%;
+  margin-left:30%;
+ font-size:25px;
+ width:19%;
+ letter-spacing:5px;
+ background-color:black;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+
+}
+
+
+
+
+
+.email{
+  margin-top:10%;
+  margin-left:25%;
+  letter-spacing:5px;
+  font-size:15px;
+}
+
+.emailname{
+  margin-top:1%;
+  margin-left:25%;
+ font-size:40px;
+ font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.sendinquiry{
+  margin-top:2%;
+  margin-left:30%;
+ font-size:25px;
+ width:19%;
+ letter-spacing:5px;
+ background-color:white;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  
+
+}
+
+
+.sendinquiry:hover{
+  margin-top:2%;
+  margin-left:30%;
+ font-size:25px;
+ width:19%;
+ letter-spacing:5px;
+ background-color:black;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+
+}
+
+
+
+
+
+@media (max-width:750px){
+
+  .phone{
+    margin-top:10%;
+    margin-left:10%;
+    letter-spacing:5px;
+    font-size:15px;
+  }
+  
+  .number{
+    margin-top:1%;
+    margin-left:10%;
+   font-size:40px;
+   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  
+  .callnow{
+    margin-top:2%;
+    margin-left:10%;
+   font-size:25px;
+   width:19%;
+   letter-spacing:5px;
+   background-color:white;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    
+  
+  }
+  
+  
+  .callnow:hover{
+    margin-top:2%;
+    margin-left:10%;
+   font-size:25px;
+   width:19%;
+   letter-spacing:5px;
+   background-color:black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+  
+  }
+  
+  
+  .email{
+    margin-top:10%;
+    margin-left:10%;
+    letter-spacing:5px;
+    font-size:15px;
+  }
+  
+  .emailname{
+    margin-top:1%;
+    margin-left:10%;
+   font-size:40px;
+   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  
+  .sendinquiry{
+    margin-top:2%;
+    margin-left:10%;
+   font-size:25px;
+   width:19%;
+   letter-spacing:5px;
+   background-color:white;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    
+  
+  }
+  
+  .sendinquiry:hover{
+    margin-top:2%;
+    margin-left:10%;
+   font-size:25px;
+   width:19%;
+   letter-spacing:5px;
+   background-color:black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+  
+  }
+  
+}
+
+
+
+
+
+
+.location{
+  margin-top:10%;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.location img{
+  float:right;
+}
+
+
+
+
+
+.locationimg{
+  float:right;
+  
+height:100%;
+  max-width:450px;
+  box-shadow:5px 4px 10px rgb(37,37,37,0.5);
+/*margin-left:5%;*/
+
+
+
+
+}
+
+.location{
+  background-color: rgb(238, 208, 231);
+  height:500px;
+
+  width:100%;
+  margin-top:10%;
+  height:auto;
+    top:auto;
+    position:absolute;
+}
+
+.location p{
+  margin-left:5%;
+  margin-top:10%;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
